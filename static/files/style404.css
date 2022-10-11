@@ -1,0 +1,106 @@
+#home{
+	background: url('https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
+	background-size: cover;
+	backround-position:center;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	opacity:100;
+}  
+
+#home{ 	
+	margin: auto;
+	height: 100vh;
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+h3{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 60px;
+	color: white;
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+}
+#home p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+  color: white;
+}
+
+button {
+  background-color: #ddd;
+  border: 1px black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 32px;
+  background: linear-gradient(white,grey);
+  size: 50px;
+  font-size: 50px;
+}
+
+button:hover{
+  background-color: #ddd;
+  border: 1px black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 32px;
+  background: linear-gradient(grey,white);
+  size: 50px;
+  font-size: 50px;
+}
+
+button:active {
+  background-color: #ddd;
+  border: 1px black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 32px;
+  background: linear-gradient(#00a9e2,black);
+
+}
+
+
+
+hr {
+    background: var(--main-decor-color);
+	margin: 2px;
+	height: 3px;
+	width: 150px;
+    border-radius:5px;
+	border: hidden;
+	margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+h2{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 30px;
+	color: white;
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+}

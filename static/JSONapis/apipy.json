@@ -1,0 +1,61 @@
+
+import time
+
+list = ["","1","2","3","4","5","6","7","8","9","0","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","!","@","#","$","%","^","&","*","(",")","_","+","-","="," ",".","/","<",">","?",";","'",":","[","]","{","}","|","`","~"]
+
+x = 10000
+f = open("passlist.txt", "wt")
+percent= 0
+
+increment = 0
+increment1 = 0
+increment2 = 0
+increment3 = 0
+increment4 = 0
+increment5 = 0
+increment6 = 0
+increment7 = 0
+increment8 = 0
+increment9 = 0
+print(len(list))
+time.sleep(1)
+while x >= 0:
+  
+  
+  print(list[increment]+list[increment1]+list[increment2]+ list[increment3]+list[increment4]+list[increment5]+list[increment6]+list[increment7]+list[increment8]+list[increment9] + ' ' + str(percent) + ' out of ' + str(x)) 
+  f.write(list[increment]+list[increment1]+list[increment2]+ list[increment3]+list[increment4]+list[increment5]+list[increment6]+list[increment7]+list[increment8]+list[increment9]+'\n')
+  increment += 1
+  if increment >= len(list): 
+    increment = 0
+    increment1 += 1
+  if increment1 >= len(list): 
+    increment1 = 0
+    increment2 += 1
+
+  if increment2 >= len(list): 
+    increment2 = 0
+    increment3 += 1
+  if increment3 >= len(list): 
+    increment3 = 0
+    increment4 += 1
+  if increment4 >= len(list): 
+    increment4 = 0
+    increment5 += 1
+  if increment5 >= len(list): 
+    increment5 = 0
+    increment6 += 1
+  if increment6 >= len(list): 
+    increment6 = 0
+    increment7 += 1
+  if increment7 >= len(list): 
+    increment7 = 0
+    increment8 += 1
+  if increment8 >= len(list): 
+    increment8 = 0
+    increment9 += 1
+  if increment9 >= len(list): 
+    increment9 = 0
+    break
+  percent += 1
+
+f.close()
